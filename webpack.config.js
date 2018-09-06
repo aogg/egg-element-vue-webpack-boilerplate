@@ -41,6 +41,7 @@ module.exports = {
     less: true,
     css: {
       options: {
+        // 开启 CSS Modules
         modules: true, // 解决$style不存在问题
       }
     },
@@ -55,7 +56,7 @@ module.exports = {
     },
     svg: {
       test: /\.svg$/,
-      loader: 'svg-sprite-loader',
+      use: 'svg-sprite-loader',
       include: [resolve('app/web/framework/element_admin/icons')],
       options: {
         symbolId: 'icon-[name]',
