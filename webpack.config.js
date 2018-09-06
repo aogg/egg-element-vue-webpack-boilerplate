@@ -31,7 +31,7 @@ module.exports = {
     component: 'app/web/component',
     framework: 'app/web/framework',
 
-    '@': resolve('app/web'), // element原
+    '@': resolve('app/web/framework/element_admin'), // element原
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
   loaders: {
@@ -44,13 +44,12 @@ module.exports = {
       }
     },
     urlimage: {
-      exclude: [resolve('app/web/icons')], // 取消覆盖
+      exclude: [resolve('app/web/framework/element_admin/icons')], // 取消覆盖
     },
     svg: {
       test: /\.svg$/,
       loader: 'svg-sprite-loader',
-      use: 'svg-sprite-loader',
-      include: [resolve('app/web/icons')],
+      include: [resolve('app/web/framework/element_admin/icons')],
       options: {
         symbolId: 'icon-[name]',
       }
