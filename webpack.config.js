@@ -31,12 +31,19 @@ module.exports = {
     component: 'app/web/component',
     framework: 'app/web/framework',
 
-    '@': resolve('app/web/framework/element_admin'), // element原
+    // element原
+    '@': resolve('app/web/framework/element_admin'),
+    fonts: 'app/web/framework/element_admin/assets/custom-theme/fonts', // 解决vue-element-admin默认加载字体失败
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
   loaders: {
     scss: true,
     less: true,
+    css: {
+      options: {
+        modules: true, // 解决$style不存在问题
+      }
+    },
     // typescript: true, // 启用 typescript 编译
     tslint: { // 自动修复功能
       options: {

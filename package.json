@@ -83,7 +83,8 @@
     "sass-loader": "^6.0.6",
     "script-loader": "^0.7.2",
     "svg-sprite-loader": "^3.9.2",
-    "vue-loader": "^15.4.1"
+    "vue-loader": "^15.4.1",
+    "vue-style-loader": "^4.1.2"
   },
   "engines": {
     "node": ">=8.0.0"
