@@ -10,6 +10,7 @@ public/
 node_modules/
 app/mocks
 app/web/store
+app/web/framework/element_admin
 plugins/
 app/web/asset/
 app/view/

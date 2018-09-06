@@ -13,6 +13,10 @@
     "no-else-return": "off",
     "strict": "off",
     "linebreak-style": "off",
+    "quotes": [2, "single", {
+      "avoidEscape": true,
+      "allowTemplateLiterals": true
+    }],
     "no-irregular-whitespace": [
       "error",
       {
