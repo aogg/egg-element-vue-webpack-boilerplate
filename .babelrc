@@ -8,6 +8,7 @@
         }
       }]],
       "plugins": [
+        "transform-vue-jsx",
         "transform-object-rest-spread",
         "syntax-dynamic-import"
       ]
@@ -20,6 +21,8 @@
         }
       }]],
       "plugins": [
+        "transform-vue-jsx",
+        "transform-runtime",
         "transform-object-rest-spread",
         "syntax-dynamic-import",
         "transform-object-assign"
