@@ -1,7 +1,7 @@
 
 module.exports = app => {
   app.get('/', app.controller.home.home.index);
-  app.get('/admin(/.+)', app.controller.admin.admin.index); // element的后台
+  app.get('/admin(/.+)?', app.controller.admin.admin.index); // element的后台
   app.get('/client', app.controller.home.home.client);
   app.get('/element', app.controller.element.element.element);
   app.get('/pager', app.controller.home.home.pager);
