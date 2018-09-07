@@ -65,11 +65,13 @@ module.exports = {
     },
     svg: {
       test: /\.svg$/,
-      use: 'svg-sprite-loader',
+      use: {
+        loader: 'svg-sprite-loader',
+        options: {
+          symbolId: 'icon-[name]',
+        },
+      },
       include: [resolve('app/web/framework/element_admin/icons')],
-      options: {
-        symbolId: 'icon-[name]',
-      }
     },
   },
   plugins: {
