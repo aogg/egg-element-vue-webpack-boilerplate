@@ -14,7 +14,7 @@ module.exports = app => {
   exports.vuessr = {
     layout: path.join(app.baseDir, 'app/web/view/layout.html'),
     renderOptions: {
-      basedir: path.join(app.baseDir, 'app/view')
+      basedir: path.join(app.baseDir, 'app/view'),
     }
   };
 
@@ -34,6 +34,14 @@ module.exports = app => {
     'locals',
     'access'
   ];
+
+  exports.locals = {
+    layoutOptions: {
+      title: 'egg-element-vue-webpack-boilerplate',
+      keywords: 'egg, vue, webpack, element, boilerplate, server side render',
+      description: 'egg-element-vue-webpack-boilerplate description',
+    },
+  };
 
   return exports;
 };
