@@ -68,8 +68,22 @@ module.exports = {
     serviceworker: true,
     vue: {
       name: new VueLoaderPlugin()
-    }
-  },
+    },
+  //   html: { // 无效，还要用npm i --save-dev html-webpack-plugin@next
+  //     type: 'client',
+  //     name: 'html-webpack-plugin',
+  //     args: {
+  //       inject: true,
+  //       template: 'app/web/view/layout.ejs',
+  //       filename: 'app/web/view/layout.html',
+  //       title: 'egg-element-vue-webpack-boilerplate',
+  //       css: [
+  //         'https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css',
+  //       ],
+  //       alwaysWriteToDisk: true,
+  //     },
+  //   },
+  // },
   node: {
     console: true
   },
@@ -82,4 +96,5 @@ module.exports = {
 // 方便看配置是否成功
 // const easywebpack = require('easywebpack-js');
 // const data = easywebpack.getWebpackConfig(config);
-// console.dir(data.module.rules);
+// // console.dir(data.module.rules);
+// console.dir(data.plugins);
