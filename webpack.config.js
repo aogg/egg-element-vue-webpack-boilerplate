@@ -6,6 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir);
 }
 
+// const config = module.exports = {
 module.exports = {
   egg: true,
   framework: 'vue',
@@ -40,10 +41,18 @@ module.exports = {
     scss: true,
     less: true,
     css: {
-      options: {
-        // 开启 CSS Modules
-        modules: true, // 解决$style不存在问题
-      }
+      use: [
+        'vue-style-loader', // 默认是style-loader
+        {
+          loader: 'css-loader',
+          options: {
+            // 开启 CSS Modules
+            modules: true,
+            localIdentName: '[local]', // 必须指定
+          }
+        }
+      ],
+      framework: false,
     },
     // typescript: true, // 启用 typescript 编译
     tslint: { // 自动修复功能
@@ -96,5 +105,5 @@ module.exports = {
 // 方便看配置是否成功
 // const easywebpack = require('easywebpack-js');
 // const data = easywebpack.getWebpackConfig(config);
-// // console.dir(data.module.rules);
-// console.dir(data.plugins);
+// console.dir(data.module.rules[3], { depth: 8 });
+// // console.dir(data.plugins);
