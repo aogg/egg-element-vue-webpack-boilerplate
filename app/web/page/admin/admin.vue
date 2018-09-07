@@ -1,9 +1,7 @@
 <template>
-  <layout>
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
-  </layout>
+  <admin-layout>
+    <router-view></router-view>
+  </admin-layout>
 </template>
 
 <script type="text/babel">
@@ -15,7 +13,6 @@ import Cookies from 'js-cookie';
 
 import store from "@/store";
 import router from "@/router";
-import Layout from "component/layout/app";
 
 // 公共css
 import 'normalize.css/normalize.css'; // A modern alternative to CSS resets
@@ -35,7 +32,7 @@ import '@/mock'; // simulation data
 
 import * as filters from '@/filters' // global filters
 
-Vue.component(Layout.name, Layout);
+
 Vue.use(ElementUI, {
     size: Cookies.get('size') || 'medium', // set element-ui default size
     i18n: (key, value) => i18n.t(key, value)
