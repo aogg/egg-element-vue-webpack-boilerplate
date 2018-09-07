@@ -83,7 +83,7 @@ module.exports = {
   //       alwaysWriteToDisk: true,
   //     },
   //   },
-  // },
+  },
   node: {
     console: true
   },
