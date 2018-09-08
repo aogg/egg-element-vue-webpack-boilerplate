@@ -1,6 +1,6 @@
 
 export default {
-  zh: {
+  cn: {
     i18nView: {
       title: '切换语言',
       note: '本项目国际化基于 vue-i18n',

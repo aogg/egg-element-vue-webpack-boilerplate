@@ -13,7 +13,7 @@ const messages = {
     ...enLocale,
     ...elementEnLocale
   },
-  zh: {
+  cn: {
     ...zhLocale,
     ...elementZhLocale
   }
@@ -21,9 +21,9 @@ const messages = {
 
 const i18n = new VueI18n({
   // set locale
-  // options: en or zh
-  locale: Cookies.get('language') || 'zh',
-  fallbackLocale: 'zh', // 默认语言
+  // options: en or cn
+  locale: Cookies.get('language') || 'cn',
+  fallbackLocale: 'cn', // 默认语言
   // set locale messages
   messages
 });

@@ -49,7 +49,7 @@ export default {
       fullscreen: false,
       languageTypeList: {
         'en': 'en',
-        'zh': 'zh_CN'
+        'cn': 'zh_CN'
       }
     }
   },
