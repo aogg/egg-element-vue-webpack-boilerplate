@@ -9,8 +9,9 @@
 
 
 ## 目录映射： 
+> egg-vue-webpack-boilerplate全部保持一致，vue-element-admin做合并
 
-| vue-element-admin | egg-vue-webpack-boilerplate | 备注 |
+| vue-element-admin | 当前项目 | 备注 |
 | --- | --- | --- |
 | src/ | app/web/framework/element_admin | 全部复制过去 |
 | static/tinymce4.7.5 | app/web/asset/public/tinymce4.7.5 | public是公开目录 |
