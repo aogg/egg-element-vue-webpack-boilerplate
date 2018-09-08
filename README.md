@@ -24,7 +24,7 @@
 
 ## 合并调整
 > 1、增加admin模块，通过/admin访问后台页面（通过客户端渲染）  
-> 2、app/web/view/layout.html可以被config/config.default.js传参
+> 2、app/web/view/layout.html可以被config/config.default.js传参  
 > 3、vue-element-admin修改i18n里的zh为cn，保持和egg-vue-webpack-boilerplate骨架的统一
 
 
