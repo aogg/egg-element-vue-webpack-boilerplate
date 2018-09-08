@@ -29,6 +29,7 @@ module.exports = {
     client: 'app/web/framework/vue/entry/client.js',
     app: 'app/web/framework/vue/app.js',
     asset: 'app/web/asset',
+    page: 'app/web/page',
     component: 'app/web/component',
     framework: 'app/web/framework',
 
